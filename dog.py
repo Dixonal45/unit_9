@@ -23,5 +23,9 @@ class Dog:
         print(self.name + " surfs the counter for leftovers from dinner")
 
     def print_trick_list(self):
-        if self.trick_list
-        print(self.trick_list)
+        if not self.trick_list:
+            print(self.name + " has not performed any tricks yet")
+        else:
+            print(self.name + " has performed the following tricks:")
+            for trick in self.trick_list:
+                print("\t" + trick)
