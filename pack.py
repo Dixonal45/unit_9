@@ -12,3 +12,18 @@ class Pack:
     def get_leader_name(self):
         leader_dog = self.members[self.leader_index]
         return leader_dog.get_name()
+
+    def add_member(self, dog2):
+        self.members.append(dog2)
+
+    def print_pack(self):
+        print("The pack contains:")
+        for member in self.members:
+            print(member.get_name())
+
+    def new_leader(self, index):
+        leader_dog = self.members[index]
+        self.leader_index = index
+        return leader_dog.get_name()
+
+
