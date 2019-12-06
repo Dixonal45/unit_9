@@ -9,6 +9,10 @@ class Card:
             return True
         elif other.rank > self.rank:
             return False
+        else:
+            if self.suit == "Spades":
+
+
 
     def __str__(self):
         values = ["Ace", "Two", "Three", "Four", "Five", "Six", "Seven",
