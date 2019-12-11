@@ -1,5 +1,5 @@
 # created by Allison Dixon
-# last modified on December 5, 2019
+# last modified on December 11, 2019
 # unit 9 option 1: this program creates a game of Compare (a small game of War) between the user and the dealer
 
 import deck
@@ -55,6 +55,7 @@ def main():
             user_wins += 1
         else:
             dealer_wins += 1
+    # this if statement prints who won the game based on who won more games
     if user_wins > dealer_wins:
         print("The user won the game!")
     else:
